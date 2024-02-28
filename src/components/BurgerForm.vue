@@ -1,8 +1,8 @@
 <template>
    <div>
-    <p>COMPONENTE DE MENSAGEM</p>
+    <Message :msg="msg" v-show="msg"/>
     <div>
-        <form action="" id="burguer-form" @submit="createBurguer">
+        <form action="" id="burger-form" @submit="createburger">
         <div class="input-container">
             <label for="nome">Nome do Cliente:  </label>
             <input type="text" id="nome" name="name" v-model="nome" placeholder="Digite seu nome">
@@ -32,7 +32,7 @@
         </div>
 
         <div class="input-container">
-            <input type="submit" class="submit-btn" value="Criar meu burguer!">
+            <input type="submit" class="submit-btn" value="Criar meu burger!">
         </div>
         
         
@@ -44,9 +44,14 @@
 </template>
 
 <script>
+import Message from '@/components/Message.vue'
 
 export default {
-    name:"BurguerForm",
+    name:"burgerForm",
+
+    components:{
+        Message
+    },
     data(){
         return{
             paes:null,
@@ -71,7 +76,7 @@ export default {
             this.opcionaisdata = data.opcionais
         },
 
-        async createBurguer(e) {
+        async createburger(e) {
 
             e.preventDefault();
             
@@ -94,6 +99,10 @@ export default {
             const res = await req.json();
 
             //Colocar msg de sistema
+            this.msg = `Pedido Nº ${res.id} realizado com sucesso`
+
+            //limpar msg
+            setTimeout(() => this.msg = "", 3000);
 
             //limpar os campos
             this.nome = "",
@@ -111,7 +120,7 @@ export default {
 
 <style scoped>
 
-#burguer-form {
+#burger-form {
     max-width: 400px;
     margin: 0 auto;
 }
