@@ -79,85 +79,14 @@
   ],
   "burgers": [
     {
-      "id": "8c08",
+      "id": "dcf1",
       "nome": "Eduardo",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [],
-      "status": "Solicitado"
-    },
-    {
-      "id": "2195",
-      "nome": "Eduardo",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
+      "carne": "Picanha",
+      "pao": "",
       "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "95ac",
-      "nome": "Eduardo",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon",
-        "Cebola roxa",
         "Cheddar"
       ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "3b7c",
-      "nome": "Eduardo",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "18f9",
-      "nome": "Eduardo",
-      "carne": "Alcatra",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "9611",
-      "nome": "Eduardo",
-      "carne": "Alcatra",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "16df",
-      "nome": "Eduardo",
-      "carne": "Alcatra",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "2b00",
-      "nome": "Eduardo",
-      "carne": "Alcatra",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado"
+      "status": "Em produção"
     }
   ]
 }
